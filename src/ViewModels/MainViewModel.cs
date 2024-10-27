@@ -164,6 +164,12 @@ namespace Savaged.BlackNotepad.ViewModels
                 _replaceDialog.GoToCmd = GoToCmd;
                 _replaceDialog.PropertyChanged += OnFindDialogPropertyChanged;
             }
+
+            string[] arguments = Environment.GetCommandLineArgs();
+            if (arguments.Count() > 1)
+            {
+               Open(arguments[1]);
+            }
         }
 
         public async Task<bool> OnClosing()

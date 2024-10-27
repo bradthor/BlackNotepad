@@ -4,10 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:converters="clr-namespace:Savaged.BlackNotepad.Converters"
+        xmlns:my="clr-namespace:Savaged.BlackNotepad"
         mc:Ignorable="d"
         Title="{Binding Title}" 
         Background="{DynamicResource MainBackgroundBrush}"
-        Height="600" Width="800"
+        Height="{my:SettingBinding Height}"
+        Width="{my:SettingBinding Width}"
+        Left="{my:SettingBinding Left}"
+        Top="{my:SettingBinding Top}"
         Loaded="OnLoaded"
         Closing="OnClosing">
     <Window.Resources>

@@ -46,5 +46,10 @@ namespace Savaged.BlackNotepad
             };
             mainView.Show();
         }
-    }
+
+        private void Application_Exit(object sender, ExitEventArgs e)
+        {
+            BlackNotepad.Properties.Settings.Default.Save();
+        }
+   }
 }
