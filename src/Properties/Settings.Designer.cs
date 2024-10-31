@@ -49,7 +49,7 @@ namespace Savaged.BlackNotepad.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("1200")]
+        [global::System.Configuration.DefaultSettingValueAttribute("800")]
         public double Width {
             get {
                 return ((double)(this["Width"]));
@@ -61,7 +61,7 @@ namespace Savaged.BlackNotepad.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("800")]
+        [global::System.Configuration.DefaultSettingValueAttribute("600")]
         public double Height {
             get {
                 return ((double)(this["Height"]));

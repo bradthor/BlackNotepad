@@ -960,6 +960,7 @@ namespace Savaged.BlackNotepad.ViewModels
                     RaisePropertyChanged(nameof(IsUndoEnabled));
                     RaisePropertyChanged(nameof(IsSelectAllEnabled));
                     break;
+
                 case nameof(SelectedItem.IsDirty):
                     RaisePropertyChanged(nameof(Title));
                     break;

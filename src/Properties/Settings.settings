@@ -9,10 +9,10 @@
       <Value Profile="(Default)">40</Value>
     </Setting>
     <Setting Name="Width" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">1200</Value>
+      <Value Profile="(Default)">800</Value>
     </Setting>
     <Setting Name="Height" Type="System.Double" Scope="User">
-      <Value Profile="(Default)">800</Value>
+      <Value Profile="(Default)">600</Value>
     </Setting>
   </Settings>
 </SettingsFile>
