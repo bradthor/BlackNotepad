@@ -200,7 +200,7 @@ namespace Savaged.BlackNotepad.ViewModels
             EndLongOpertation();
         }
 
-        public string Title => $"{SelectedItem?.Name} - Black Notepad";
+        public string Title => (SelectedItem.IsDirty ? "*" : "") + $"{SelectedItem?.Name} - Black Notepad";
 
         public bool IsBusy => _busyRegister.Count > 0;
 
@@ -959,6 +959,9 @@ namespace Savaged.BlackNotepad.ViewModels
                 case nameof(SelectedItem.Content):
                     RaisePropertyChanged(nameof(IsUndoEnabled));
                     RaisePropertyChanged(nameof(IsSelectAllEnabled));
+                    break;
+                case nameof(SelectedItem.IsDirty):
+                    RaisePropertyChanged(nameof(Title));
                     break;
             }
         }
