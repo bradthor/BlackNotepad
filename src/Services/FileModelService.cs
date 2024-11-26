@@ -44,7 +44,7 @@ namespace Savaged.BlackNotepad.Services
             }
             var contentBuilder = new StringBuilder();
             var lineEnding = LineEndings._;
-            using (var sr = new StreamReader(fileModel.Location))
+            using (var sr = new StreamReader(fileModel.Location, Encoding.UTF8, true))
             {
                 var p = 0;
                 while (p != -1)
