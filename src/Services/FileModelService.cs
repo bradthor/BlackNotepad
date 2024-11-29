@@ -31,7 +31,7 @@ namespace Savaged.BlackNotepad.Services
 
         private void SaveFile(FileModel fileModel)
         {
-            File.WriteAllText(fileModel.Location, fileModel.Content);
+            File.WriteAllText(fileModel.Location, fileModel.Content, Encoding.Default);
             fileModel.IsDirty = false;
         }
 
@@ -44,7 +44,7 @@ namespace Savaged.BlackNotepad.Services
             }
             var contentBuilder = new StringBuilder();
             var lineEnding = LineEndings._;
-            using (var sr = new StreamReader(fileModel.Location, Encoding.UTF8, true))
+            using (var sr = new StreamReader(fileModel.Location, Encoding.Default))
             {
                 var p = 0;
                 while (p != -1)
