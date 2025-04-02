@@ -888,6 +888,8 @@ namespace Savaged.BlackNotepad.ViewModels
             _dialogService.ShowDialog(
                 "A black 'version' of the classic Microsoft Windows " +
                 $"Notepad application{Environment.NewLine}" +
+                $"https://github.com/savaged/BlackNotepad{Environment.NewLine}{Environment.NewLine}" +
+                $"... with modifications by Brad Thorvilson{Environment.NewLine}" +
                 $"{Environment.NewLine}BlackNotepad v{productVersion}", 
                 "About");
         }
